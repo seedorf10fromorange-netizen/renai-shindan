@@ -95,6 +95,7 @@ const RESULTS = {
         solution: "我慢せずに、不安になったその瞬間に「誰かと繋がっている安心感」を得ることが大切。気持ちを外に出すだけで、心は驚くほど軽くなります。",
         recommendation: "チャット占い【ブリランテ】",
         reason: "ブリランテは24時間いつでもLINE感覚で相談可能。深夜にモヤモヤが爆発しそうなとき、スマホひとつでサクッとプロに頼れる手軽さがあなたにぴったりです。",
+        pushCopy: "深夜の不安は、朝まで抱えなくて大丈夫。",
         ctaText: "今すぐLINEで相談してみる",
         ctaLink: CONFIG.linkBrillante
     },
@@ -105,6 +106,7 @@ const RESULTS = {
         solution: "同じ悩みをぐるぐる考えてしまうなら、客観的な第三者の視点を取り入れること。そして、もらったアドバイスを「お守り」として見返すことが心の安定に繋がります。",
         recommendation: "チャット占い【ブリランテ】",
         reason: "ブリランテはチャットの履歴がずっと残ります。復縁や複雑な恋愛相談に強い先生が多く、不安になったらいつでも占い師からの温かい言葉を見返せるのが最大の魅力です。",
+        pushCopy: "一人で過去を思い出す夜は、ここで終わりにしませんか？",
         ctaText: "復縁の可能性を相談してみる",
         ctaLink: CONFIG.linkBrillante
     },
@@ -115,6 +117,7 @@ const RESULTS = {
         solution: "妥協せず、実績や口コミをしっかり確認して「この人なら信頼できる」と思えるプロの占い師に一度だけしっかり鑑定してもらうのが解決の近道です。",
         recommendation: "ココナラ占い",
         reason: "ココナラは圧倒的な在籍数と口コミ数を誇ります。実際に利用した人の生の声を見て、自分と相性の良さそうな先生を比較・厳選できるため、ジプシー状態から抜け出せます。",
+        pushCopy: "あなたが本当に納得できる答えが、ここで見つかるはずです。",
         ctaText: "口コミで人気の先生を探す",
         ctaLink: CONFIG.linkCoconala
     },
@@ -125,6 +128,7 @@ const RESULTS = {
         solution: "未来を占ってもらう前に、まずは心のデトックスが必要です。あなたの想いを否定せずにすべて聞いてくれる「傾聴のプロ」を頼ってみてください。",
         recommendation: "ココナラ 悩み相談・話し相手",
         reason: "ココナラには占いだけでなく「悩み相談・愚痴聞き」の専用カテゴリがあります。占い師ではなく心理カウンセラーや聞き上手のプロに、ただただ話を聞いてもらうことができます。",
+        pushCopy: "あなたの想いを、否定せずにすべて受け止めます。",
         ctaText: "心のデトックスを体験する",
         ctaLink: CONFIG.linkCoconala
     },
@@ -135,6 +139,7 @@ const RESULTS = {
         solution: "その警戒心は正しいです。まずは上場企業が運営している安心・安全なプラットフォームで、初回特典やお得なクーポンを使って「お試し体験」をするのがベストです。",
         recommendation: "ココナラ占い ＆ お悩み相談",
         reason: "ココナラはTVCMでもおなじみの上場企業運営。決済もココナラが仲介するため安心です。さらに業界最安値水準の手頃な価格帯のサービスが多く、コスパ最強です。",
+        pushCopy: "まずは無料分のお試しで、安心体験から始めてみましょう。",
         ctaText: "お得な初回特典をチェック",
         ctaLink: CONFIG.linkCoconala
     }
@@ -262,6 +267,7 @@ function showResult() {
     document.getElementById('result-solution').textContent = resultData.solution;
     document.getElementById('result-recommendation').textContent = resultData.recommendation;
     document.getElementById('result-reason').textContent = resultData.reason;
+    document.getElementById('result-push-copy').textContent = resultData.pushCopy;
     
     const ctaBtn = document.getElementById('cta-button');
     ctaBtn.textContent = resultData.ctaText + " ▶";

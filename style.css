@@ -285,10 +285,22 @@ h1, h2, h3 {
 .result-card {
     position: relative;
     z-index: 2;
+    background: rgba(14, 14, 20, 0.92); /* 可読性向上のためにより濃い黒に */
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15); /* 輪郭を際立たせる */
 }
 
 .result-section {
     margin-bottom: 32px;
+}
+
+.push-copy {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    line-height: 1.5;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .result-section h3 {
